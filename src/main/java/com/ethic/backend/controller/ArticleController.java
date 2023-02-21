@@ -1,15 +1,17 @@
 package com.ethic.backend.controller;
 
+
 import com.ethic.backend.exception.ArticleNotFoundException;
 import com.ethic.backend.model.Article;
 import com.ethic.backend.repository.ArticleRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+
 import java.util.List;
 
 @RestController
-@CrossOrigin("http://localhost:3000")
+@CrossOrigin(origins = {"http://localhost:3000", "https://2620:0:890::100"})
 public class ArticleController {
 
     @Autowired
@@ -49,4 +51,5 @@ public class ArticleController {
         articleRepository.deleteById(id);
         return  "User with id "+id+" has been deleted success.";
     }
+
 }
