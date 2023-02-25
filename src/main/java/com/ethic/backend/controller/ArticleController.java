@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@CrossOrigin(origins = {"http://localhost:3000", "https://2620:0:890::100"})
+@CrossOrigin("http://localhost:3000")
 public class ArticleController {
 
     @Autowired
