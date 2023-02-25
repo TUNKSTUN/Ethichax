@@ -17,7 +17,7 @@ const Article = () => {
     loadArticle();
   }, []);
   const loadArticle = async () => {
-    const result = await axios.get(`http://192.168.0.113:8443/articles/${id}`);
+    const result = await axios.get(`https://backend-1677300384071.azurewebsites.net/articles/${id}`);
     setArticle(result.data);
   };
 

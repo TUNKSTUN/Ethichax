@@ -19,7 +19,7 @@ const Blog = () => {
 
   const loadArticles = async () => {
     try {
-      const response = await axios.get("http://192.168.0.113:8443/articles");
+      const response = await axios.get("https://backend-1677300384071.azurewebsites.net/articles");
       setArticles(response.data);
       // Save articles to local storage
       // localStorage.setItem('articles', JSON.stringify(response.data));
