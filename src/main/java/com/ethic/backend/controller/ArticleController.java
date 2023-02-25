@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@CrossOrigin("http://localhost:8443")
+@CrossOrigin("https://backend-1677300384071.azurewebsites.net/articles")
 public class ArticleController {
 
     @Autowired
@@ -51,5 +51,6 @@ public class ArticleController {
         articleRepository.deleteById(id);
         return  "User with id "+id+" has been deleted success.";
     }
+
 
 }
