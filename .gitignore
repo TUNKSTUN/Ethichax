@@ -28,6 +28,7 @@ target/
 build/
 !**/src/main/**/build/
 !**/src/test/**/build/
+!**/main/tunkstun1/node_modules/
 
 ### VS Code ###
 .vscode/
