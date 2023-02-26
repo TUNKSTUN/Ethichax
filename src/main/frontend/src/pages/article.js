@@ -41,11 +41,8 @@ const Article = () => {
     );
   }
 
-  // Save the article data to local storage
-  // localStorage.setItem(`article-${id}`, JSON.stringify(result.data))
-
   return (
-    <div className="w-full h-full bg-stone-900">
+    <div className="flex w-full h-full bg-stone-900">
 
     <div className="flex justify-between  w-full xl:pt-20 lg:pt-20 pt-32 h-full p-8  text-white font-mono">
       <div className="flex xl:w-1/3 lg:w-1/4 h-1/6 w-auto"></div>
