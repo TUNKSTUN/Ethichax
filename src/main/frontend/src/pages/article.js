@@ -13,22 +13,22 @@ const Article = () => {
   });
   const { id } = useParams();
   useEffect(() => {
-    const loadArticle = async () => {
-      try{
-      const result = await axios.get(`/articles/${id}`);
-      setArticle(result.data);
-      
-      setLoading(false);
+    const loadArticles = async () => {
+      try {
+        const response = await axios.get("/articles");
+        setArticles(response.data);
       } catch (error) {
         console.log(error);
       }
     };
-    loadArticle();
+
+    loadArticles();
   }, []);
+
 
   if (loading) {
     return (
-      <div className="flex xl:ml-80 h-screen lg:ml-52 md:ml-20 justify-center items-center">
+      <div className="flex xl:ml-80 h-screen lg:ml-52 md:ml-20 justify-center items-center bg-stone-900">
         <InfinitySpin
           color="#1A120B"
           height={140}

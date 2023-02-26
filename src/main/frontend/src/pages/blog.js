@@ -12,8 +12,6 @@ const Blog = () => {
       try {
         const response = await axios.get("/articles");
         setArticles(response.data);
-        // Save articles to local storage
-        // localStorage.setItem('articles', JSON.stringify(response.data));
         setLoading(false);
       } catch (error) {
         console.log(error);
