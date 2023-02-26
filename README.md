@@ -1,5 +1,5 @@
 # Ethichax - Personal Blogging Webapp! 📝✍🏻🚀🌐️
-### ![Demo Project](/images_proj/Blog_WebApp.gif "Project Demo")
+### ![Demo Project](/images_proj/Blog_WebApp.gif)
 👋🏻 Hello and welcome to Ethichax Personal Blogging Webapp! This is a ReactJS application that allows admin to perform CRUD operations on articles. The app is hosted on Azure Web App and uses Azure MySQL for storing articles data.
 
 🔥 Firebase - Realtime Database is used for Guest Book feature which allows anyone to leave a message anonymously on this website.🔥
@@ -26,7 +26,7 @@ spring.datasource.url = <JDBC URL>
 spring.datasource.username = <your username>
 spring.datasource.password = <your password>
 ```
-## Integrating React + Srping Boot 🍃
+## Integrating React + Spring Boot 🍃
 
 See how you can Integrate your React app in Spring boot by reading this article:
 > [Run React and SpringBoot on the same port and Package them as a single artifact !!](https://medium.com/codex/run-react-frontend-and-springboot-backend-on-the-same-port-and-package-them-as-a-single-artifact-a790c9e10ac1)
