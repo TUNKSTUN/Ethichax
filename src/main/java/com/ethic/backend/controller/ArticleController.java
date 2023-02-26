@@ -4,28 +4,29 @@ package com.ethic.backend.controller;
 import com.ethic.backend.exception.ArticleNotFoundException;
 import com.ethic.backend.model.Article;
 import com.ethic.backend.repository.ArticleRepository;
+import com.google.cloud.storage.Cors;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.web.servlet.error.ErrorController;
 import org.springframework.web.bind.annotation.*;
 
 
 import java.util.List;
 
 @RestController
-@CrossOrigin("https://backend-1677300384071.azurewebsites.net/articles")
-public class ArticleController {
+@CrossOrigin("https://ethichax.azurewebsites.net/")
+public class ArticleController implements ErrorController {
 
     @Autowired
     private ArticleRepository articleRepository;
-
     @PostMapping("/articles")
     Article article(@RequestBody Article newArticle) {
         return articleRepository.save(newArticle);
     }
-
     @GetMapping("/articles")
     List<Article> getAllArticles() {
         return articleRepository.findAll();
     }
+
     @GetMapping("/articles/{id}")
     Article getArticleById(@PathVariable Long id) {
         return articleRepository.findById(id)

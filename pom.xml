@@ -149,10 +149,10 @@
 		        <version>2.9.0</version>
 		        <configuration>
 		            <schemaVersion>v2</schemaVersion>
-		            <resourceGroup>backend-1677300384071-rg</resourceGroup>
-		            <appName>backend-1677300384071</appName>
+		            <resourceGroup>ethichax</resourceGroup>
+		            <appName>Ethichax</appName>
 		            <pricingTier>F1</pricingTier>
-		            <region>centralus</region>
+		            <region>eastus</region>
 		            <runtime>
 		                <os>Linux</os>
 		                <javaVersion>Java 17</javaVersion>
