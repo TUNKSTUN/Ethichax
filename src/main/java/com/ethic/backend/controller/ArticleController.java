@@ -4,7 +4,6 @@ package com.ethic.backend.controller;
 import com.ethic.backend.exception.ArticleNotFoundException;
 import com.ethic.backend.model.Article;
 import com.ethic.backend.repository.ArticleRepository;
-import com.google.cloud.storage.Cors;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.web.servlet.error.ErrorController;
 import org.springframework.web.bind.annotation.*;
