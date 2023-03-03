@@ -1,5 +1,5 @@
 # Ethichax - Personal Blogging Webapp! 📝✍🏻🚀🌐️
-### ![Demo Project](/images_proj/Blog_WebApp.gif)
+### ![Demo Project](/images_proj/eth.gif)
 👋🏻 Hello and welcome to Ethichax Personal Blogging Webapp! This is a ReactJS application that allows admin to perform CRUD operations on articles. The app is hosted on Azure Web App and uses Azure MySQL for storing articles data.
 
 🔥 Firebase - Realtime Database is used for Guest Book feature which allows anyone to leave a message anonymously on this website.🔥
