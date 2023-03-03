@@ -13,7 +13,7 @@ function navbar() {
       
       <div className='flex text-white space-x-4 md:space-x-10 lg:space-y-8 xl:space-y-8 xl:flex lg:flex xl:flex-col text-sm md:text-xl xl:text-2xl lg:text-xl lg:flex-col xl:text-start  lg:text-start px-3 xl:py-44 lg:py-40  justify-center items-end text-center'>
        <div className="logo flex items-center justify-center"> <Link className=' w-auto h-auto transition ease-in-out duration-200 hover:scale-y-110 hover:cursor-pointer hover:font-bold hover:text-stone-100' to={"/"}>
-       <img src={Logo} alt="logo" className='xl:w-20 lg:w-20 xl:h-20 lg:h-20 w-10 h-10 xl:p-1 lg:p-2 p-1 transition ease-in-out duration-500 hover:rotate-180 hover:cursor-pointer'/>
+       <img src={Logo} alt="logo" className='xl:w-20 lg:w-20 xl:h-20 rotate-180 lg:h-20 w-10 h-10 xl:p-1 lg:p-2 p-1 transition ease-in-out duration-500 hover:rotate-0 hover:cursor-pointer'/>
        </Link>
        </div>
         <div className='xl:hidden lg:hidden pt-1'></div>

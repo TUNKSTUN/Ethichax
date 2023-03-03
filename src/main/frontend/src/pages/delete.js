@@ -38,7 +38,7 @@ const Delete = () => {
     <div className='w-full h-full text-white fixed backdrop-blur-sm top-0 right-0 z-20 justify-center items-center flex flex-col p-10 font-Epilogue'>
         <div className='w-auto h-full text-stone-200  bg-gradient-to-bl from-stone-800 to-black rounded-xl  justify-center items-center p-10 flex flex-col border  '>
     <h1 className='mt-10 m-2 text-4xl font-extrabold tracking-widest'> Delete Articles</h1>
-      <div className='w-auto h-full shadow-black shadow-inner backdrop-blur-lg  rounded-xl bg-stone-800 py-5 border text-stone-200 flex flex-col scrollbar p-5 scrollbar-thumb-stone-100 scrollbar-thumb-rounded scrollbar-track-black scroll-auto  transition ease-in-out duration-500 hover:scrollbar-thumb-stone-300 overflow-y-auto '>
+      <div className='w-full h-full shadow-black shadow-inner backdrop-blur-lg  rounded-xl bg-stone-800 py-5 border text-stone-200 flex flex-col scrollbar p-5 scrollbar-thumb-stone-100 scrollbar-thumb-rounded scrollbar-track-black scroll-auto  transition ease-in-out duration-500 hover:scrollbar-thumb-stone-300 overflow-y-auto '>
         
           <ol className='list-decimal text-white'>
             {articles.map((article, index) => (

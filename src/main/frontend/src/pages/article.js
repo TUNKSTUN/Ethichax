@@ -1,12 +1,11 @@
 import React, { useEffect, useState   } from "react";
 import { useParams, useNavigate, Link } from "react-router-dom";
 import axios from "../axios-config";
-import { InfinitySpin } from "react-loader-spinner";
-import { FaEdit, FaBackward } from "react-icons/fa";
+import { RevolvingDot } from "react-loader-spinner";
+import { FaEdit } from "react-icons/fa";
 import { MdOutlineArrowBackIos } from "react-icons/md";
 const Article = () => {
   const [loading, setLoading] = useState(true);
- let index =0;
   const history = useNavigate();
 
   const [article, setArticle] = useState({
@@ -30,7 +29,7 @@ const Article = () => {
         } finally {
           setLoading(false); // Set loading to false after data is fetched (or after an error occurs)
         }
-      }, 1000); // Set the timeout duration to 3 seconds
+      }, 1500); // Set the timeout duration to 3 seconds
     };
     
     useEffect(() => {
@@ -39,10 +38,10 @@ const Article = () => {
   if (loading) {
     return (
       <div className="flex xl:ml-80 h-screen lg:ml-52 md:ml-20 justify-center items-center bg-stone-900">
-        <InfinitySpin
+        <RevolvingDot
           color="#FFFFFF"
-          height={140}
-          width={140}
+          height={50}
+          width={50}
           wrapperStyle
           wrapperClass
           ariaLabel="Loading"

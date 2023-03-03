@@ -71,7 +71,7 @@ const Edit = () => {
                 name="date"
                 value={date}
                 readOnly="true"
-                className="w-full border-b-white p-2 h-auto border-none rounded-md bg-green-100 text-black "
+                className="w-full border-b-white p-2 h-auto border-none rounded-md bg-stone-100 text-black "
                 onChange={onInputChange}
               />
               <label>Title</label>
@@ -81,7 +81,7 @@ const Edit = () => {
                 autoComplete="off"
                 autoSave="off"
                 value={title}
-                className="w-full border-b-white p-2  h-auto border-none rounded-md bg-green-100 text-black"
+                className="w-full border-b-white p-2  h-auto border-none rounded-md bg-stone-100 text-black"
                 onChange={onInputChange}
               />
               <label>Description</label>
@@ -91,7 +91,7 @@ const Edit = () => {
                 autoComplete="off"
                 autoSave="off"
                 value={description}
-                className="w-full border-b-white p-2   h-auto border-none rounded-md bg-green-100 text-black"
+                className="w-full border-b-white p-2   h-auto border-none rounded-md bg-stone-100 text-black"
                 onChange={onInputChange}
               />
               <label>Article</label>
@@ -101,13 +101,13 @@ const Edit = () => {
                 autoComplete="off"
                 autoSave="off"
                 value={article}
-                className="w-full border-b-white p-2  h-auto border-none rounded-md bg-green-100 text-black"
+                className="w-full border-b-white p-2  h-auto border-none rounded-md bg-stone-100 text-black"
                 onChange={onInputChange}
               />
               <div className="w-full h-full space-x-3 flex">
                   <button
                     type="submit"
-                    className="w-full h-auto bg-stone-800 text-white p-2 rounded-md hover:bg-green-900 hover:border-green-100 border-2 transition duration-300 ease-in-out"
+                    className="w-full h-auto bg-stone-800 text-white p-2 rounded-md hover:bg-stone-900 hover:border-stone-100 border-2 transition duration-300 ease-in-out"
                   >
                 Update
                   </button>

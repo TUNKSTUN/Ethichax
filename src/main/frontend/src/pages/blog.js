@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "../axios-config";
-import { InfinitySpin } from "react-loader-spinner";
+import {RevolvingDot  } from "react-loader-spinner";
 import {BiArrowToTop} from "react-icons/bi"
 
 const Blog = () => {
@@ -35,10 +35,10 @@ const Blog = () => {
   if (loading) {
     return (
       <div className="flex xl:ml-80 lg:ml-40 h-screen justify-center items-center">
-        <InfinitySpin
+        <RevolvingDot
           color="#1A120B"
-          height={140}
-          width={140}
+          height={80}
+          width={80}
           wrapperStyle
           wrapperClass
           ariaLabel="Loading"
