@@ -19,8 +19,16 @@
     <frontend-src-dir>src/main/frontend</frontend-src-dir>  
     <node.version>v18.14.1</node.version>  
     <npm.version>9.5.1</npm.version>  
-    <frontend-maven-plugin.version>1.7.6</frontend-maven-plugin.version> 
-  </properties>  
+    <frontend-maven-plugin.version>1.7.6</frontend-maven-plugin.version>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+
+    <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+    <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/mydatabase"/>
+    <property name="javax.persistence.jdbc.user" value="root"/>
+    <property name="javax.persistence.jdbc.password" value="mypassword"/>
+    <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>
+  </properties>
+
   <dependencies> 
     <dependency> 
       <groupId>org.springframework.boot</groupId>  

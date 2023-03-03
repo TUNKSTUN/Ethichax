@@ -22,7 +22,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
         @Controller
         public static class RoutesController {
-            @GetMapping(value = "/{path:[^\\.]*}")
+            @GetMapping(value = {"/", "/{path:^(?!api).*$}/**"})
             public String redirect() {
                 return "forward:/index.html";
             }

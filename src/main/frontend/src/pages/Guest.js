@@ -71,7 +71,7 @@ const Guest = () => {
   };
 
   return (
-    <div className="xl:right-0 xl:top-0 lg:right-0 lg:top-0  flex xl:mt-0 lg:mt-0 absolute flex-col p-10 xl:pt-16 lg:pt-16 xl:p-10 lg:p-10 bg-stone-300 pt-32 w-full h-full xl:w-3/4 lg:w-4/5 text-start font-Epilogue ">
+    <div className="xl:right-0 xl:top-0 lg:right-0 lg:top-0  flex xl:mt-0 lg:mt-0 absolute flex-col p-10 xl:pt-20 lg:pt-16 xl:p-10 lg:p-10  bg-gradient-to-tl from-stone-600 to-stone-100 pt-32 w-full h-full xl:w-3/4 lg:w-4/5 text-start font-Epilogue ">
       <h1 className="text-5xl pb-5 font-bold drop-shadow-md">Guest Book:</h1>
       <form
         className="w-full flex justify-center items-center mb-5"
@@ -93,7 +93,7 @@ const Guest = () => {
         <div
         key={messageCard.id}
         className="bg-transparent  w-auto border-b-stone-600 border-b my-4 p-4 text-start text-stone-300 flex text-md xl:text-xl  gap-x-2 shadow-inner shadow-black"
-        ><span className="w-9 h-9 text-md rounded-full border-stone-100 border p-2 font-light bg-gradient-to-br from-white to-stone-600 text-stone-800 transition ease-linear duration-75 hover:cursor-pointer hover:bg-stone-100 hover:text-black"><BsFillPersonFill/></span>
+        ><span className="w-9 h-9 text-md rounded-full border-stone-100 border p-2 font-light bg-gradient-to-br from-white to-stone-700 text-stone-800 transition ease-linear duration-75 hover:cursor-pointer hover:bg-stone-100 hover:text-black"><BsFillPersonFill/></span>
           <div className="text-md text-justify font-mono bg-stone-800 border-b border-stone-700 shadow-md shadow-black w-max h-full overflow-x-clip py-1 px-3 rounded-xl">{messageCard.text}</div>
         </div>
       ))}
