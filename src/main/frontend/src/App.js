@@ -5,11 +5,11 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import About from "./pages/about";
 import Blog from "./pages/blog.js";
 import Article from "./pages/article";
-import Contact from "./pages/Contact";
-import Guest from "./pages/Guest";
+import Contact from "./pages/contact";
+import Guest from "./pages/guest";
 import Navbar2 from "./layout/navbar2";
-import Error from "./layout/Error"
-import Edit from "./pages/Edit"
+import Error from "./layout/error"
+import Edit from "./pages/edit"
 import Delete from "./pages/delete"
 import Add from "./pages/add"
 const App = () => {

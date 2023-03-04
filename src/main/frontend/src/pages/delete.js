@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import {Link} from "react-router-dom"
 import axios from '../axios-config';
-
+import { RevolvingDot } from 'react-loader-spinner';
 const Delete = () => {
   const [articles, setArticles] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -30,6 +30,18 @@ const Delete = () => {
       console.error(error);
     }
   };
+  if(loading){
+    return(
+      <div className='w-full h-screen bg-stone-900 text-white items-center justify-center top-0 right-0 z-20 fixed'>
+          <RevolvingDot
+            color='white'
+            width={80}
+            height={80}
+            secondaryColor='brown'
+          />
+      </div>
+    );
+  }
 
   return (
     <>

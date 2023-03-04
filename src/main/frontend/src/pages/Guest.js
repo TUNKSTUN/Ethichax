@@ -3,7 +3,6 @@ import { RiSendPlane2Fill } from "react-icons/ri";
 import {BsFillPersonFill} from "react-icons/bs"
 import firebase from "firebase/compat/app";
 import "firebase/compat/database";
-import EmojiPicker from "emoji-picker-react"
 
 const firebaseConfig = {
   apiKey: "AIzaSyA4A3LrAKntsYEjnmgQCCoNWiGxfKXQS6I",
@@ -22,7 +21,6 @@ const db = firebase.database().ref("messages");
 const Guest = () => {
   const [message, setMessage] = useState("");
   const [messageCards, setMessageCards] = useState([]);
-  const [emojiPicker, setemojiPicker] = useState();
 
   useEffect(() => {
     db.on("value", (snapshot) => {
