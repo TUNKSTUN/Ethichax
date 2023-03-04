@@ -36,7 +36,7 @@ const Blog = () => {
     return (
       <div className="flex xl:ml-80 lg:ml-40 h-screen justify-center items-center">
         <RevolvingDot
-          color="#1A120B"
+          color="white"
           height={80}
           width={80}
           wrapperStyle
@@ -47,11 +47,11 @@ const Blog = () => {
     );
   }
   return (
-    <div className="flex xl:right-0 xl:top-0 w-full bg-transparent font-mono mt-20  xl:mt-0 lg:mt-0 h-full justify-end p-10 bg-gradient-to-bl from-stone-600 to-stone-100">
-      <div className="grid grid-cols-1 lg:w-4/5 xl:w-3/4 gap-1 justify-center items-center p-2 xl:p-10 lg:p-10 h-full">
+    <div className="flex xl:right-0 xl:top-0 w-full bg-transparent font-mono mt-20  xl:mt-0 lg:mt-0 h-full justify-end p-10 bg-gradient-to-bl from-stone-400 to-stone-100 ">
+      <div className="grid grid-cols-1 lg:w-4/5 xl:w-4/5 gap-1 justify-center items-center p-2 xl:p-10 lg:p-10 h-full">
         {articles.reverse().map((article, index) => (
           <div
-            className="p-4 mb-4 bg-gradient-to-tl from-black to-stone-800 text-stone-300 rounded-lg shadow-lg transition ease-in-out duration-500 hover:scale-105 hover:-rotate-1 hover:bg-gradient-br hover:from-black hover:to-stone-700 hover:border-stone-300 hover:border-b"
+            className="p-4 mb-4 bg-gradient-to-tl from-black to-stone-800 text-stone-300 rounded-lg shadow-lg transition ease-in-out duration-500 hover:scale-105 hover:-rotate-1 hover:bg-gradient-br hover:from-black hover:to-black hover:border-stone-300 hover:border-b"
             key={article.id}
           >
             <div>
@@ -63,7 +63,7 @@ const Blog = () => {
                 </Link>
               </h2>
               <p className="text-gray-500">{article.date}</p>
-              <h3 className="text-md text-gray-400 text-justify">
+              <h3 className="text-md text-gray-400 text-justify italic">
                 {article.description.split(" ").slice(0, 10).join(" ")}
                 {article.description.split(" ").length > 10 ? "..." : ""}
               </h3>

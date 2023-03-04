@@ -14,8 +14,8 @@ import Delete from "./pages/delete"
 import Add from "./pages/add"
 const App = () => {
   return (
-      <div className="bg-stone-300 w-full h-full z-10">
-    <Router>
+      <div className="bg-stone-900 w-full h-full z-10">
+    <Router className="bg-black">
         <Navbar />
         <Navbar2/>
         <Routes>

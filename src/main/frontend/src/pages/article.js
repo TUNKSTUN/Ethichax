@@ -29,7 +29,7 @@ const Article = () => {
         } finally {
           setLoading(false); // Set loading to false after data is fetched (or after an error occurs)
         }
-      }, 1500); // Set the timeout duration to 3 seconds
+      },); // Set the timeout duration to 3 seconds
     };
     
     useEffect(() => {
@@ -51,10 +51,10 @@ const Article = () => {
   }
 
   return (
-    <div className="flex w-full h-full pt-20 bg-stone-900 items-center">
+    <div className="flex w-full h-full pt-10 bg-stone-900 items-center">
 
     <div className="flex justify-between  w-full h-full p-8 text-white font-mono">
-      <div className="flex xl:w-1/3 lg:w-1/4 h-1/6 w-auto "></div>
+      <div className="flex xl:w-1/4 lg:w-1/5 h-1/6 w-auto "></div>
      
       <div
         key={article.id}
