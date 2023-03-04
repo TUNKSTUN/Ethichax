@@ -5,7 +5,7 @@
 🔥 Firebase - Realtime Database is used for Guest Book feature which allows anyone to leave a message anonymously on this website.🔥
 ## <p align="center"> Working Project 🛠️ </p>
 Hosted on Azure Web Apps 👇🏻
-> [ETHICHAX](https://ethichax.azurewebsite.net)
+> [ETHICHAX](https://ethichax.web.app)
 ## Technologies Used  👨‍💻
 1. Hosting - Azure Web App
 2. Backend Server - Spring Boot (Web, JPA, Thymeleaf and JDBC)
