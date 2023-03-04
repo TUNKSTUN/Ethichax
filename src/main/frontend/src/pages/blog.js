@@ -10,7 +10,6 @@ const Blog = () => {
  
     function handleClick() {
       window.scrollTo({ top: 0, behavior: 'smooth' });
-   
   }
 
   const loadArticles = async () => {
@@ -23,9 +22,9 @@ const Blog = () => {
         } catch (error) {
           console.log(error);
         } finally {
-          setLoading(false); // Set loading to false after data is fetched (or after an error occurs)
+          setLoading(false); 
         }
-      }, 1000); // Set the timeout duration to 3 seconds
+      }, 1000); 
     };
 
     useEffect(() => {
@@ -47,7 +46,7 @@ const Blog = () => {
     );
   }
   return (
-    <div className="flex xl:right-0 xl:top-0 w-full bg-transparent font-mono mt-20  xl:mt-0 lg:mt-0 h-full justify-end p-10 bg-gradient-to-bl from-stone-400 to-stone-100 ">
+    <div className="flex xl:right-0 xl:top-0 w-full h-full  bg-transparent font-mono mt-20  xl:mt-0 lg:mt-0 justify-end p-10 bg-gradient-to-bl from-stone-400 to-stone-100 ">
       <div className="grid grid-cols-1 lg:w-4/5 xl:w-4/5 gap-1 justify-center items-center p-2 xl:p-10 lg:p-10 h-full">
         {articles.reverse().map((article, index) => (
           <div

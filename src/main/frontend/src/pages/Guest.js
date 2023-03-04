@@ -85,12 +85,12 @@ const Guest = () => {
           <RiSendPlane2Fill />
         </button>
       </form>
-      <div className="overflow-y-auto h-full overflow-x-hidden scrollbar bg-stone-900 p-5 scrollbar-thumb-stone-100 scrollbar-thumb-rounded scrollbar-track-black scroll-auto scrollbar-thin  transition ease-in-out duration-500 hover:scrollbar-thumb-stone-300 border-black border rounded-md ">
+      <div className="overflow-y-auto h-full overflow-x-hidden bg-stone-900 p-5 scrollbar-thumb-stone-100 scrollbar-thumb-rounded scrollbar-track-black scroll-auto scrollbar-thin  transition ease-in-out duration-500 hover:scrollbar-thumb-stone-300 border-black border rounded-md ">
 
       {messageCards.map((messageCard) => (
         <div
         key={messageCard.id}
-        className="bg-stone-800  w-auto border-b-stone-600 border-b my-4 p-4 text-start text-stone-300 flex text-md xl:text-xl  gap-x-2 shadow-inner shadow-black"
+        className="bg-stone-800  w-auto border-b-stone-600 border-b my-4 p-4 text-start text-stone-300 flex text-xs lg:text-lg md:text-lg xl:text-xl  gap-x-2 shadow-inner shadow-black"
         ><span className="w-9 h-9 text-xl rounded-full border-stone-100 border p-[7px] font-light bg-gradient-to-br from-white to-stone-700 text-stone-800 transition ease-linear duration-75 hover:cursor-pointer hover:bg-stone-100 hover:text-black"><BsFillPersonFill/></span>
           <div className="text-md text-justify font-mono bg-stone-900 border-2 border-stone-700 shadow-md shadow-black w-max h-full overflow-x-clip py-1 px-3 rounded-xl">{messageCard.text}</div>
         </div>
