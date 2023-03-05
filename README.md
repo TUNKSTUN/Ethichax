@@ -1,3 +1,5 @@
+![](https://komarev.com/ghpvc/?username=TUNKSTUN)
+<br/>
 # Ethichax - Personal Blogging Webapp! 📝✍🏻🚀🌐️
 <p align="center"><img src="https://github.com/TUNKSTUN/Ethichax/blob/main/eth.gif" alt="demo app"/></p>
 👋🏻 Hello and welcome to Ethichax Personal Blogging Webapp! This is a ReactJS application that allows admin to perform CRUD operations on articles. The app uses Azure MySQL for storing articles data.
