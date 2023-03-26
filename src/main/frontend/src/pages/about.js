@@ -5,8 +5,8 @@ const About = () => {
 
 
   return (
-    <div className='xl:flex lg:flex sm:flex-col md:flex-col h-screen w-full bg-transparent bg-white'>
-    <div className='flex xl:w-1/5 sm:p-20 w-full lg:w-1/5 xl:h-full lg:h-full bg-transparent bg-stone-300'/>
+    <div className='xl:flex lg:flex sm:flex-col md:flex-col h-screen w-full bg-stone-300'>
+    <div className='flex xl:w-1/5 sm:p-20 w-full lg:w-1/5 xl:h-full lg:h-full'/>
     <div className="flex xl:w-4/5 lg:w-4/5  flex-col text-start text-stone-900 font-mono p-10 items-start justify-center bg-stone-300">
       <h1 className='xl:text-4xl text-4xl  font-bold drop-shadow-md  tracking-widest font-Epilogue'>About:</h1><br/>
       
