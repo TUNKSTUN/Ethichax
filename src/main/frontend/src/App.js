@@ -5,11 +5,11 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import About from "./pages/about";
 import Blog from "./pages/blog.js";
 import Article from "./pages/article";
-import Contact from "./pages/contact";
-import Guest from "./pages/guest";
+import Contact from "./pages/Contact";
+import Guest from "./pages/Guest";
 import Navbar2 from "./layout/navbar2";
-import Error from "./layout/error"
-import Edit from "./pages/edit"
+import Error from "./layout/Error"
+import Edit from "./pages/Edit"
 import Delete from "./pages/delete"
 import Add from "./pages/add"
 const App = () => {
@@ -28,10 +28,6 @@ const App = () => {
           <Route exact path="/articles/:id/edit" element={<Edit />} />
           <Route exact path="/articles/all" element={<Delete />} />
           <Route exact path="/articles/add" element={<Add />} />
-
-
-
-          
         </Routes>
     </Router>
       </div>

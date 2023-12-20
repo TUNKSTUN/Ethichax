@@ -22,6 +22,7 @@
     "react-markdown": "^8.0.5",
     "react-router-dom": "^6.8.1",
     "react-sc": "^0.2.1",
+    "react-script": "^2.0.5",
     "react-spinner": "^0.2.7",
     "react-syntax-highlighter": "^15.5.0",
     "request": "^2.79.0"
