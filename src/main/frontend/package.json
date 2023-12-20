@@ -14,6 +14,7 @@
     "emoji-picker-react": "^4.4.7",
     "eslint-plugin-react-hooks": "^5.0.0-next-d49e0e0be-20230302",
     "firebase": "^9.17.1",
+    "firebase-tools": "^13.0.2",
     "gun": "^0.2020.1239",
     "nodeman": "^1.1.2",
     "react": "^18.2.0",

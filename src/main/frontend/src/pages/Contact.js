@@ -5,7 +5,7 @@ const Contact = () => {
     <div className="flex bg-transparent h-screen w-full ">
       <div className="xl:w-1/5 lg:w-1/5 h-1/4"></div>
 
-    <div className=" w-full p-10 flex-col xl:text-start lg:text-start text-center text-xl  text-stone-900 xl:w-4/5 lg:w-4/5 h-full xl:mt-0 lg:mt-0 flex top-0 right-0 xl:py-36 pt-40 font-Epilogue  bg-stone-300">
+    <div className=" w-full p-8 flex-col xl:text-start lg:text-start text-center text-xl  text-stone-900 xl:w-4/5 lg:w-4/5 h-full xl:mt-0 lg:mt-0 flex top-0 right-0 xl:py-36 pt-40 font-Epilogue  bg-stone-300">
       <h1 className="text-4xl drop-shadow-md font-bold tracking-widest ">Contact:</h1>
     <br/>
 
