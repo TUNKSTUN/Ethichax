@@ -47,20 +47,6 @@ function Navbar2() {
             </button>
           </form>
           <div className="flex space-x-2 h-auto justify-evenly">
-            <Link
-              to={`/articles/add`}
-              className="w-24 text-sm flex flex-col text-center border-stone-400 border items-center transition ease-in-out duration-200 hover:border hover:bg-stone-700 hover:text-stone-100 p-1 rounded-lg gap-1 "
-            >
-              <MdPostAdd className="text-xl " />
-              Add
-            </Link>
-            <Link
-              to={`/articles/all`}
-              className="w-24 text-sm flex flex-col text-center border-stone-400 border items-center transition ease-in-out duration-200 hover:border hover:bg-stone-700 hover:text-stone-100 p-1 rounded-lg gap-1"
-            >
-              <AiTwotoneDelete className="text-xl" />
-              Delete
-            </Link>
           </div>
         </div>
       </div>
