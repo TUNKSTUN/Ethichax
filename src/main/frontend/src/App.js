@@ -9,9 +9,6 @@ import Contact from "./pages/Contact";
 import Guest from "./pages/Guest";
 import Navbar2 from "./layout/navbar2";
 import Error from "./layout/Error"
-import Edit from "./pages/Edit"
-import Delete from "./pages/delete"
-import Add from "./pages/add"
 const App = () => {
   return (
       <div className="bg-stone-900 w-full h-full z-10">
@@ -25,9 +22,6 @@ const App = () => {
           <Route exact path="/about" element={<About />} />
           <Route exact path="/guest_book" element={<Guest />} />
           <Route exact path="*" element={<Error />} />
-          <Route exact path="/articles/:id/edit" element={<Edit />} />
-          <Route exact path="/articles/all" element={<Delete />} />
-          <Route exact path="/articles/add" element={<Add />} />
         </Routes>
     </Router>
       </div>
